@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <meta property="og:site_name" content="Hongshan Duan">
+    <meta property="og:site_name" content="Hongshan Duan Personal Page">
     <meta property="og:type" content="article">
 
     
@@ -22,9 +22,9 @@
     
 
     
-    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
-    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
-    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta name="description" content="HongshanDianaDuan，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="HongshanDianaDuan，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="HongshanDianaDuan，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
     
 
     
@@ -32,10 +32,10 @@
     
     
 
-    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <meta name="keyword"  content="HongshanDianaDuan, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Hongshan Duan | 赵化冰的博客 | Zhaohuabing Blog</title>
+    <title>Hongshan Duan Personal Page | HongshanDianaDuan的博客 | Zhaohuabing Blog</title>
 
     <link rel="canonical" href="/">
 
@@ -87,7 +87,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Hongshan Duan</a>
+            <a class="navbar-brand" href="/">Hongshan Duan Personal Page</a>
         </div>
 
         
@@ -170,7 +170,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
                 <div class="site-heading">
-                    <h1>Hongshan Duan </h1>
+                    <h1>Hongshan Duan Personal Page </h1>
                     
 		    <span class="subheading">PhD Student at Beijing Foreign Studies University</span>
                 </div>
@@ -194,33 +194,6 @@
             post-container
         ">
             
-
-<div class="post-preview">
-    <a href="https://HongshanDianaDuan.github.io/2018/05/22/user_authentication_authorization/">
-        <h2 class="post-title">
-            微服务安全沉思录之一
-        </h2>
-	
-        <h3 class="post-subtitle">
-            用户访问认证与鉴权
-        </h3>
-	
-        <div class="post-content-preview">
-	
-            这段时间对之前微服务安全相关的一些想法进行了进一步总结和归纳，理清在之前文章里面没有想得太清楚的地方，例如服务间的认证与鉴权以及用户身份在服务调用链中的传递。在这一系列博客里面将分为三个部分对微服务安全进行系统阐述：用户访问认证与鉴权，服务间认证与鉴权，外部系统访问控制。
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by     &#34;赵化冰&#34; on Wednesday, May 23, 2018
-        
-        
-    
-    </p>
-
-</div>
-<hr>
 
 <div class="post-preview">
     <a href="https://HongshanDianaDuan.github.io/2018/05/23/istio-auto-injection-with-webhook/">
@@ -320,6 +293,56 @@
     <p class="post-meta">
     
         Posted by 赵化冰 on Wednesday, April 11, 2018
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://HongshanDianaDuan.github.io/2018/03/29/what-is-service-mesh-and-istio/">
+        <h2 class="post-title">
+            谈谈微服务架构中的基础设施：Service Mesh与Istio
+        </h2>
+	
+        <h3 class="post-subtitle">
+            Service Mesh模式及Istio开源项目介绍
+        </h3>
+	
+        <div class="post-content-preview">
+	
+            作为一种架构模式，微服务将复杂系统切分为数十乃至上百个小服务，每个服务负责实现一个独立的业务逻辑。这些小服务易于被小型的软件工程师团队所理解和修改，并带来了语言和框架选择灵活性，缩短应用开发上线时间，可根据不同的工作负载和资源要求对服务进行独立缩扩容等优势。另一方面，当应用被拆分为多个微服务进程后，进程内的方法调用变成了了进程间的远程调用。引入了对大量服务的连接、管理和监控的复杂性,本文介绍了Service Mesh模式如何应对微服务架构的这些挑战，以及Service Mesh的明星开源项目Istio。
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by 赵化冰 on Thursday, March 29, 2018
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://HongshanDianaDuan.github.io/2018/03/13/use-docker-behind-http-proxy/">
+        <h2 class="post-title">
+            如何配置docker使用HTTP代理
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            如何配置docker使用HTTP代理
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by 赵化冰 on Tuesday, March 13, 2018
         
         
     
@@ -583,7 +606,7 @@
             
            
                    <li>
-                       <a href='/index.xml' rel="alternate" type="application/rss+xml" title="Hongshan Duan" >
+                       <a href='/index.xml' rel="alternate" type="application/rss+xml" title="Hongshan Duan Personal Page" >
                            <span class="fa-stack fa-lg">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
@@ -593,7 +616,7 @@
             
              </ul>
 		<p class="copyright text-muted">
-                    Copyright &copy; Hongshan Duan 2024
+                    Copyright &copy; Hongshan Duan Personal Page 2024
                     <br>
                     <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
                     <iframe

@@ -1,24 +1,33 @@
 # 这里是网站的一些基本配置
 baseurl = "https://HongshanDianaDuan.github.io" # 网址
-title = "Hongshan Duan" # 网站标题
+title = "Hongshan Duan Personal Page" # 网站标题
 theme = "cleanwhite"  # 网站主题模板（不能改）
 languageCode = "en-us" # 语言，中文是zh-cn
 # Enable comments by entering your Disqus shortname
 disqusShortname = "" # disqus评论系统的设置
 googleAnalytics = ""
 preserveTaxonomyNames = true
-paginate = 5 #frontpage pagination，每一页显示几篇文章
+paginate = 6 #frontpage pagination，每一页显示几篇文章
 hasCJKLanguage = true # 是否有中日韩文字，没有可以改成false
 publishDir = "docs" # 不能改
-
+# zhegeshi yuancheng de wangye, bendi yulan shi `hugo server`o
 [outputs]
 home = ["HTML", "RSS", "Algolia"]
+# 我再完整示范一遍 haod 
+# 先打开这个git页面（source control），如果显示我这边有更改会显示，就pull下来，点击sync就好，现在没有就下一步
+# hugo server之后打开locolhost：1313，就是预览
+# 假设现在盖好了，效果也正常
+# ctrl/command+C停止刚刚打开的server，运行hugo（ -F -- clean DestinationDir）
+# 括号里的最好加上，意思是清理之前的缓存，记不住的话也可以不加。
+# 然后在git页面填写改动，点击commit，点击sync
+# commit message没有要求，但是一般是update/test/fix/chore加英文冒号加具体描述
+# 比如说这次是更新了一些信息，就可以归类为update,zhongwen yekeyi
 
 [params]
   header_image = "img/home-bg-jeep.jpg"
-  SEOTitle = "赵化冰的博客 | Zhaohuabing Blog" # 这个也是标题，改成一样的就好
-  description = "赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" # 网站描述，回现实在搜索引擎中
-  keyword = "赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice"
+  SEOTitle = "HongshanDianaDuan的博客 | Zhaohuabing Blog" # 这个也是标题，改成一样的就好
+  description = "HongshanDianaDuan，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" # 网站描述，回现实在搜索引擎中
+  keyword = "HongshanDianaDuan, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice"
   slogan = "PhD Student at Beijing Foreign Studies University"
   upstreamAttribution = true
 
@@ -32,6 +41,8 @@ home = ["HTML", "RSS", "Algolia"]
   page_view_counter = false
   leancloud_app_id = ""
   leancloud_app_key = ""
+
+  # 其他样式比如颜色字体什么的也可以改，不过先替换内容吧，换好了如果你有想改的地方给我说就好好的，谢谢鲨鱼老师，我改一下对应的内容，信息量好大！谢谢你：）慢慢来，你好滴改一个我看看吧，测验一下好的
 
   # algolia site search，站点搜索设置
   # 需要安装aogolia
