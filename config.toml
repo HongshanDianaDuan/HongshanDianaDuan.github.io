@@ -1,42 +1,46 @@
-baseurl = "https://zhaohuabing.com"
-title = "Huabing Blog"
-theme = "cleanwhite"
-languageCode = "en-us"
+# 这里是网站的一些基本配置
+baseurl = "https://HongshanDianaDuan.github.io" # 网址
+title = "Hongshan Duan" # 网站标题
+theme = "cleanwhite"  # 网站主题模板（不能改）
+languageCode = "en-us" # 语言，中文是zh-cn
 # Enable comments by entering your Disqus shortname
-disqusShortname = ""
+disqusShortname = "" # disqus评论系统的设置
 googleAnalytics = ""
 preserveTaxonomyNames = true
-paginate = 5 #frontpage pagination
-hasCJKLanguage = true
-publishDir = "docs"
+paginate = 5 #frontpage pagination，每一页显示几篇文章
+hasCJKLanguage = true # 是否有中日韩文字，没有可以改成false
+publishDir = "docs" # 不能改
 
 [outputs]
 home = ["HTML", "RSS", "Algolia"]
 
 [params]
   header_image = "img/home-bg-jeep.jpg"
-  SEOTitle = "赵化冰的博客 | Zhaohuabing Blog"
-  description = "赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。"
+  SEOTitle = "赵化冰的博客 | Zhaohuabing Blog" # 这个也是标题，改成一样的就好
+  description = "赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" # 网站描述，回现实在搜索引擎中
   keyword = "赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice"
-  slogan = "路在脚下，心向远方"
+  slogan = "PhD Student at Beijing Foreign Studies University"
   upstreamAttribution = true
 
+  # 404页面的设置
   image_404 = "img/404-bg.jpg"
   title_404 = "你来到了没有知识的荒原 :("
   omit_categories = false
 
   # leancloud storage for page view counter
+  # 访问次数统计
   page_view_counter = false
   leancloud_app_id = ""
   leancloud_app_key = ""
 
-  # algolia site search
+  # algolia site search，站点搜索设置
+  # 需要安装aogolia
   algolia_search = true
-  algolia_appId = ""
-  algolia_indexName = ""
-  algolia_apiKey = ""
+  algolia_appId = "O3T3CJF5HX"
+  algolia_indexName = "algolia.json"
+  algolia_apiKey = "c1d34696fcb27390b53a3c5b0d6ccb45"
 
-  # Sidebar settings
+  # Sidebar settings，全屏后可以看到
   sidebar_about_description = "Software Developer, Open Source Enthusiast and Life Adventurer"
   #sidebar_avatar = "img/avatar-zhaohuabing.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
   sidebar_avatar = "img/zhaohuabing.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
@@ -66,8 +70,11 @@ home = ["HTML", "RSS", "Algolia"]
   reward = true 
   # reward_guide = "如果这篇文章对你有用,请随意打赏" 
 
+  # 友链
   friends = true
+  # 是否显示书签
   bookmarks = false
+  # 是否显示关于
   about_me = true
 
   # Include any custom CSS and/or JS files, url or relative to /static folder
@@ -75,8 +82,9 @@ home = ["HTML", "RSS", "Algolia"]
   #custom_js = ["js/lightbox.js", "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js", "js/main.js"]
 
   [params.social]
+  # 底部社交图标，不需要可以在前面加井号注释（有时候需要重启hugo server好的）
   rss            = true 
-  email          = "youremail@gmail.com"
+  #email          = "youremail@gmail.com"
   #facebook      = "full profile url in facebook"
   #googleplus    = "full profile url in googleplus"
   #twitter       = "full profile url in twitter"
