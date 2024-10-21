@@ -37,7 +37,7 @@ home = ["HTML", "RSS", "Algolia"]
   # 需要安装aogolia
   algolia_search = true
   algolia_appId = "O3T3CJF5HX"
-  algolia_indexName = "algolia.json"
+  algolia_indexName = "blog_search"
   algolia_apiKey = "c1d34696fcb27390b53a3c5b0d6ccb45"
 
   # Sidebar settings，全屏后可以看到
